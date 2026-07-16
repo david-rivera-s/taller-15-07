@@ -1,0 +1,61 @@
+/* Contenedor con bordes redondeados y sombra suave */
+.tabla-contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden; /* Esto asegura que las esquinas de la tabla respeten el redondeado */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eef2f5;
+    background-color: #ffffff;
+}
+
+/* Tabla base */
+.tabla-peliculas {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+/* Encabezados de la tabla */
+.tabla-header {
+    background-color: #2b3a4a; /* Azul pizarra elegante */
+    color: #ffffff;
+    font-weight: 600;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.8px;
+}
+
+/* Estilos de las celdas comunes */
+.tabla-celda {
+    padding: 14px 20px;
+    color: #4a5568;
+    border-bottom: 1px solid #edf2f7;
+    transition: background-color 0.2s ease;
+}
+
+/* Filas alternas (efecto cebra) */
+.tabla-fila:nth-child(even) {
+    background-color: #f8fafc; /* Un gris sumamente sutil */
+}
+
+/* Efecto hover al pasar el ratón por encima de una fila */
+.tabla-fila:hover .tabla-celda {
+    background-color: #f1f5f9;
+}
+
+/* Estilos específicos para destacar algunas columnas */
+.celda-titulo {
+    font-weight: 600;
+    color: #1a202c; /* Texto un poco más oscuro para resaltar el nombre */
+}
+
+.celda-views {
+    font-family: monospace; /* Formato de números más limpio */
+    font-size: 0.9rem;
+    color: #4a5568;
+}

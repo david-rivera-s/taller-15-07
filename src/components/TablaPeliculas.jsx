@@ -1,4 +1,4 @@
-import "./TablaPeliculas.css"
+// import "./TablaPeliculas.css"
 
 export const TablaPeliculas = ({ peliculas }) => {
     return(
@@ -6,20 +6,22 @@ export const TablaPeliculas = ({ peliculas }) => {
             <table>
                 <thead>
                     <tr>
-                    <th>Título</th>
-                    <th>Género</th>
-                    <th>Views</th>
-                    <th>Director</th>
+                        <th>Título</th>
+                        <th>Género</th>
+                        <th>Views</th>
+                        <th>Director</th>
                     </tr>
                 </thead>
                 <tbody>
                     {peliculas.map((p) => {
-                        <tr>
-                            <td>{p.titulo}</td>
-                            <td>{p.genero}</td>
-                            <td>{p.views}</td>
-                            <td>{p.director}</td>
-                        </tr>
+                        return(
+                            <tr key={p.id}>
+                                <td>{p.titulo}</td>
+                                <td>{p.genero}</td>
+                                <td>{p.views}</td>
+                                <td>{p.director}</td>
+                            </tr>
+                        )
                     })}
                 </tbody>
             </table>

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { TablaPeliculas } from './components/TablaPeliculas'
+import TablaPeliculas from './components/TablaPeliculas'
 import { peliculas } from './data/peliculas'
 
 function App() {

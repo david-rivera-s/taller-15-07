@@ -1,6 +1,6 @@
 // import "./TablaPeliculas.css"
 
-export const TablaPeliculas = ({ peliculas }) => {
+function TablaPeliculas ({ peliculas }) {
     return(
         <div>
             <table>
@@ -28,3 +28,5 @@ export const TablaPeliculas = ({ peliculas }) => {
         </div>
     )
 }
+
+export default TablaPeliculas

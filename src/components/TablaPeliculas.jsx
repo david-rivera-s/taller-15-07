@@ -14,6 +14,7 @@ function TablaPeliculas({ peliculas }) {
                         <th className="tabla-header">Views</th>
                         <th className="tabla-header">Popularidad</th>
                         <th className="tabla-header">Director</th>
+                        <th className="tabla-header">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,6 +45,12 @@ function TablaPeliculas({ peliculas }) {
                                 </td>
 
                                 <td className="tabla-celda">{p.director}</td>
+
+                                {/* Metemos los botones dentro de un <td> */}
+                                <td className="tabla-celda celda-acciones">
+                                    <button className="btn-editar">Editar</button>
+                                    <button className="btn-eliminar">Eliminar</button>
+                                </td>
                             </tr>
                         );
                     })}
